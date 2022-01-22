@@ -4,6 +4,7 @@ import Main from "../pages/Main";
 import Sidebar from "../components/Sidebar";
 import Products from "../pages/Products";
 import Register from "../pages/Register";
+import Login from "../pages/Login";
 
 const Router = () => {
   return <BrowserRouter>
@@ -12,8 +13,13 @@ const Router = () => {
         path="/" 
         element={<HomeRouter/>}
       />
-      <Route path="/register"
+      <Route 
+        path="/register"
         element={<Register/>} 
+      />
+      <Route
+        path="/login"
+        element={<Login/>}
       />
     </Routes>
      

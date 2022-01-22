@@ -24,7 +24,7 @@ export default Router;
 
 const HomeRouter = () => {
   return (
-    <div className="flex">
+    <div className="flex min-h-screen">
       <Sidebar/>
       <Routes>
         <Route

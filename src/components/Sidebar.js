@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnnotationIcon, ArchiveIcon, CalendarIcon, ChatAlt2Icon, CogIcon, CreditCardIcon, LogoutIcon, PresentationChartBarIcon, QuestionMarkCircleIcon, ViewBoardsIcon } from '@heroicons/react/solid'
+import { AnnotationIcon, ArchiveIcon, CalendarIcon, ChatAlt2Icon, CogIcon, CreditCardIcon, LogoutIcon, PresentationChartBarIcon, QuestionMarkCircleIcon, UserIcon, ViewBoardsIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -44,25 +44,17 @@ const sidebarMainMenu = [
     link: '/'
   },
   {
-    title: 'Products',
+    title: 'Produk',
     icon: <ArchiveIcon/>,
     link: '/products'
   },
   {
-    title: 'Statictic',
+    title: 'Statistik',
     icon: <PresentationChartBarIcon/>
   },
   {
-    title: 'Schedule',
-    icon: <CalendarIcon/>
-  },
-  {
-    title: 'Payout',
-    icon: <CreditCardIcon/>
-  },
-  {
-    title: 'Statement',
-    icon: <AnnotationIcon/>
+    title: 'Admin',
+    icon: <UserIcon/>
   }
 ]
 
@@ -70,10 +62,6 @@ const sidebarMenu = [
   {
     title: 'Help',
     icon: <QuestionMarkCircleIcon/>
-  },
-  {
-    title: 'Community',
-    icon: <ChatAlt2Icon/>
   },
   {
     title: 'Setting',

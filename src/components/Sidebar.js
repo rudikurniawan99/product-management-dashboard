@@ -9,11 +9,12 @@ const Sidebar = () => {
     </div>
     <div className="space-y-6">
       {sidebarMainMenu.map(menu => (
-        <div className="hover:bg-blue-500 ">
+        <div className="group">
           <Link to="">
             <div className="text-gray-600 flex items-center">
-              <div className="mr-3 w-5 text-gray-500">{menu.icon}</div>
-              <p>{menu.title}</p>
+              <span className="absolute left-0 scale-y-0 w-1.5 h-5 bg-blue-500 rounded-r group-hover:scale-y-100"/>
+              <div className="mr-3 w-5 text-gray-500 group-hover:text-gray-800">{menu.icon}</div>
+              <p className="group-hover:text-gray-800">{menu.title}</p>
             </div>
           </Link>
         </div>
@@ -22,11 +23,12 @@ const Sidebar = () => {
     <hr className="my-6" />
     <div className="space-y-6">
       {sidebarMenu.map(menu => (
-        <div className="hover:bg-blue-500">
+        <div className="group">
           <Link to="">
             <div className="text-gray-600 flex items-center">
-              <div className="mr-3 w-5 text-gray-500">{menu.icon}</div> 
-              <p>{menu.title}</p>
+              <span className="absolute left-0 scale-y-0 w-1.5 h-5 bg-blue-500 rounded-r group-hover:scale-y-100"/>
+              <div className="mr-3 w-5 text-gray-500 group-hover:text-gray-800">{menu.icon}</div> 
+              <p className="group-hover:text-gray-800">{menu.title}</p>
             </div>
           </Link>
         </div>

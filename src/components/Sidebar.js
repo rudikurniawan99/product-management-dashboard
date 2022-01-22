@@ -25,7 +25,7 @@ const Sidebar = () => {
     <div className="space-y-6">
       {sidebarMenu.map(menu => (
         <div className="group">
-          <Link to="">
+          <Link to={menu.link ? menu.link : '/'}>
             <div className="text-gray-600 flex items-center">
               <span className="absolute left-0 scale-y-0 w-1.5 h-5 bg-gray-800 rounded-r group-hover:scale-y-100"/>
               <div title={menu.title} className="mr-3 w-5 text-gray-500 group-hover:text-gray-800">{menu.icon}</div> 
@@ -81,7 +81,8 @@ const sidebarMenu = [
   },
   {
     title: 'Log Out',
-    icon: <LogoutIcon/>
+    icon: <LogoutIcon/>,
+    link: '/register'
   }
 ]
 
